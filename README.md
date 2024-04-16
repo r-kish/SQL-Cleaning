@@ -4,10 +4,10 @@ The goal of this project was to extract publicly accessible data, and load it in
 
 The data accessed was publicly provided housing data from the Nashville Metropolitan Area.
 
-- Duplicates were removed as best seen fit
+- NULL values were filled if possible, or removed
 - Addresses were broken up into city, state, and street address
 - Values were replaced to use terms that would benefit later data analysis and visualization
-- NULL values were either filled or removed as needed using CTE:
+- Duplicates were removed by using CTE:
 ```
 WITH row_numCTE AS (
 SELECT *,
