@@ -1,7 +1,6 @@
 -- Nashville Metropolitan Area Housing SQL Data Cleaning Project
 -- by: Richard Kish
 -- Completed 1/30/2024
--- Please use with NashvilleHousing.xlsx
 ------------------------------------------------------------------------------------------------------------
 
 -- View the entire dataset
