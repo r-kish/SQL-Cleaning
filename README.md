@@ -5,7 +5,7 @@ The goal of this project was to extract publicly accessible data, and load it in
 - Addresses were broken up into city, state, and street address
 - Values were replaced to use terms that would benefit later data analysis and visualization
 - NULL values were either filled or removed as needed using CTE
-  ```
+```
 WITH row_numCTE AS (
 SELECT *,
 	ROW_NUMBER() OVER (
@@ -22,4 +22,4 @@ FROM NashvilleHousing.dbo.NashvilleHousing
 DELETE
 FROM row_numCTE
 WHERE row_num > 1
-  ```
+```
